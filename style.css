@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243047;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #2457a7;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #2457a7;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2457a7;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #173e7c;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #eef2f7;
+}
+
+#status.success {
+    color: #176534;
+    background-color: #e3f7e9;
+}
+
+#status.error {
+    color: #a32222;
+    background-color: #fde8e8;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd3df;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #9bbcf3;
+    border-color: #2457a7;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.notes-section {
+    margin-top: 35px;
+}
+
+#notes-list {
+    padding: 0;
+    list-style: none;
+}
+
+.note-item {
+    margin-bottom: 18px;
+    padding: 18px;
+    border: 1px solid #dce3ed;
+    border-radius: 8px;
+    background-color: #fafcff;
+}
+
+.note-item h3 {
+    margin-top: 0;
+    overflow-wrap: anywhere;
+}
+
+.note-item p {
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background-color: #bd3030;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background-color: #922020;
+}
+
+.empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 15px auto;
+        padding: 18px;
+    }
+}
